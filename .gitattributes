@@ -1,2 +1,111 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victoria's Journal</title>
+    <!-- INTERNAL CSS STARTS HERE -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #afeced; 
+            margin: 0;
+            padding: 20px;
+        }
+
+        #container {
+            width: 800px;
+            margin: 0 auto; 
+            background-color: white;
+            padding: 15px;
+            border: 1px solid #aaa; 
+            box-sizing: border-box; 
+        }
+
+        #header-section {
+            background-color: #acf6fc;
+            padding: 10px 15px;
+            margin-bottom: 20px; 
+            border: 1px solid #333; 
+        }
+
+        h1, h2 {
+            font-weight: bold;
+        }
+        #friends-list {
+            float: left;
+            width: 200px;
+            background-color: #d0f4d0;
+            padding: 10px;
+            margin-right: 20px; 
+            border: 1px solid #333;
+        }
+
+        #entries-section {
+            width: 550px;
+            float: left;
+        }
+
+        .entry {
+            background-color: #eaf4ff; 
+            padding: 10px;
+            margin-bottom: 15px; 
+            border: 1px solid #333;
+            overflow: auto; 
+        }
+
+        .entry-image {
+            float: right;
+            margin: 0 0 10px 15px; 
+            border: 1px solid #000;
+            width: 100px;
+            height: auto;
+        }
+
+        .entry-body p {
+            margin-top: 0; 
+        }
+    </style>
+    <!-- INTERNAL CSS ENDS HERE -->
+</head>
+<body>
+    <div id="container">
+        <div id="header-section">
+            <h1>Victoria's Journal</h1>
+            <p>So fresh and so clean</p>
+        </div>
+
+        <div id="main-content">
+            <div id="friends-list">
+                <h2>Friends</h2>
+                <ul>
+                    <li>04/09/08: Spatulas</li>
+                    <li>04/08/08: Cookie Cupcakes</li>
+                </ul>
+            </div>
+
+            <div id="entries-section">
+                <div class="entry">
+                    <h2 class="entry-date">04/09/08: Spatulas</h2>
+                    <div class="entry-body">
+                        <!-- Assumes you have an image named 'spatula.jpg' in the same folder -->
+                        <img src="spatula.jpg" alt="A spatula" class="entry-image">
+                        <p>Yesterday, I went to the store and got some much needed spatulas (what better way to say I love myself than to buy myself a spatula?).</p>
+                    </div>
+                </div>
+
+                <div class="entry">
+                    <h2 class="entry-date">04/08/08: Cookie Cupcakes</h2>
+                    <div class="entry-body">
+                        <!-- Assumes you have an image named 'cupcakes.jpg' in the same folder -->
+                        <img src="cookies.jpg" alt="Cookie cupcakes" class="entry-image">
+                        <p>My favorite cartoon character is cookie, and my favorite dessert is cupcakes. So Cookie Cupcakes are best of both the worlds. Did you know? Cookie character once said, Sometimes me think what is love, and then me think love is what cookie is for. We give up the last cookie for you. I wonder if the same applies for the cupcakes? (If so, I don't think I can ever love ANYONE()).</p>
+                    </div>
+                </div>
+            </div>
+             <!-- This div ensures the layout cleans up after the floated columns -->
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+</body>
+</html>
